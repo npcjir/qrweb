@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación Offline</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+    <header>
+        <h1>Aplicación Offline</h1>
+    </header>
+
+    <main>
+        <div class="input-section">
+            <input type="text" id="inputText" placeholder="Escribe algo...">
+            <button onclick="generateCodes()">Generar</button>
+        </div>
+        <div class="output-section">
+            <div id="qrCode"></div>
+            
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Aplicación</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.5.0/lib/qr-code-styling.js"></script>
+    
+    <script src="script.js"></script>
+    <script src="sw-register.js"></script>
+</body>
+</html>
